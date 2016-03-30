@@ -1,0 +1,142 @@
+body {
+  font-family: "Raleway", sans-serif; }
+
+.navbar {
+  z-index: 100;
+  width: 100%;
+  background-color: #EEE;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .navbar.navbar-default {
+    border-color: transparent !important; }
+    .navbar.navbar-default .navbar-nav li {
+      font-size: 14px; }
+      .navbar.navbar-default .navbar-nav li a {
+        color: gray; }
+        .navbar.navbar-default .navbar-nav li a:hover {
+          color: #E48080;
+          background-color: none; }
+        .navbar.navbar-default .navbar-nav li a:focus {
+          color: #E48080;
+          background-color: none; }
+      .navbar.navbar-default .navbar-nav li.active a {
+        border-radius: 5px;
+        background-color: white;
+        color: #E48080; }
+        .navbar.navbar-default .navbar-nav li.active a:hover {
+          color: #E48080; }
+        .navbar.navbar-default .navbar-nav li.active a:focus {
+          color: #E48080; }
+
+.navbar-toggle {
+  margin-top: 10px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: transparent; }
+  .navbar-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.05); }
+  .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.05); }
+  .navbar-toggle .icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #E48080; }
+
+.navbar-text {
+  margin-left: 15px; }
+
+/*--Header--*/
+header .presentacion-marca .opening {
+  display: inline-block;
+  float: left; }
+header .presentacion-marca .op-i {
+  width: 20px; }
+  header .presentacion-marca .op-i i {
+    font-size: 24px; }
+header .presentacion-marca .titulo-opening {
+  font-weight: 700;
+  font-size: 14px; }
+header .presentacion-marca .hora {
+  font-size: 11px;
+  display: block; }
+header .buscador {
+  padding: 5px;
+  border: 1px solid #EEE;
+  width: 250px; }
+  header .buscador input {
+    border: 1px solid white;
+    outline: none; }
+header #nav-header li a {
+  color: black; }
+header #nav-header li:hover {
+  background-color: #E48080; }
+  header #nav-header li:hover a {
+    color: white; }
+header .dropdown {
+  background-color: none; }
+header .cart {
+  background-color: #514949;
+  color: white;
+  font-size: 14px;
+  padding: 7px;
+  text-align: center; }
+  header .cart i {
+    margin-right: 5px; }
+  header .cart p {
+    font-size: 12px; }
+
+/*-----Portada-----*/
+#portada {
+  background-image: url(../../assets/images/slider1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center; }
+  #portada p {
+    color: white; }
+  #portada .titulo-coleccion {
+    font-size: 30px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    max-width: 600px;
+    margin: 20px auto; }
+  #portada .coleccion {
+    font-size: 20px; }
+
+/*-----Categorias-----*/
+.accesorios {
+  background-image: url(../../assets/images/banner1.jpg); }
+
+.nueva-coleccion {
+  background-image: url(../../assets/images/banner2.jpg); }
+
+/*-----en vitrina-----*/
+#envitrina .clasificacion-productos {
+  margin: 15px;
+  text-align: center; }
+  #envitrina .clasificacion-productos a {
+    color: #EEE;
+    text-decoration: none;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-weight: 700; }
+    #envitrina .clasificacion-productos a:hover {
+      color: black;
+      text-decoration: none; }
+    #envitrina .clasificacion-productos a:focus {
+      color: black;
+      text-decoration: none; }
+#envitrina .producto {
+  padding: 5px;
+  text-align: center;
+  background-color: white; }
+  #envitrina .producto .precio-producto {
+    color: #E48080; }
+
+/*----------*/
+/*----------*/
+/*----------*/
+/*----------*/
+
+/*# sourceMappingURL=main.css.map */

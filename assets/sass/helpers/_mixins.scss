@@ -1,0 +1,40 @@
+@mixin parrafo($align) {
+	font-family: $RobotoSlab;
+	font-size: 14px;
+	color: $middle-gray;
+	text-align: $align;
+}
+@mixin boton{
+	background-color: $yellow;
+	border-radius: 5px;
+	color: white;
+	font-family: $Montserrat;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 20px 40px;
+	margin: 40px auto;
+	&:hover {
+		color: #fff;
+	}
+	&:focus {
+		color: #fff;
+	}
+	@media (max-width: 480px) {
+		width: 50%;
+		padding: 20px;
+	}
+}
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+@mixin titulosecundario{
+	font-family: $Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	color: $gray;
+}

@@ -1,0 +1,48 @@
+mixin descripcionproductoespecial()
+	.descripcion-producto
+		p.nombreproducto Deliver Wide
+		p
+			i.fa.fa-star
+			i.fa.fa-star
+			i.fa.fa-star
+			i.fa.fa-star-o
+			i.fa.fa-star-o
+		p.precio-producto $218.00
+mixin producto()
+	.descripcion
+		p.nombreproducto Deliver Wide
+		p
+			i.fa.fa-star
+			i.fa.fa-star
+			i.fa.fa-star
+			i.fa.fa-star-o
+			i.fa.fa-star-o
+		p.precio-producto $218.00
+		a.add-to-cart
+			i.fa.fa-shopping-cart
+			| Add to Cart
+mixin post(src)
+	.post
+		img(src=src, alt="imagen post").img-responsive
+		p.titular THE SAMPLE HEADING TITLE
+		p.fecha-publicacion 27/11/2015
+		p.texto  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ducimus, tempora...
+		a.expand-post Read more...
+mixin atencioncliente(icon, servicio, descripcion)
+	.servicio
+		div
+			i(class= icon)
+		div
+			p.nombre-servicio= servicio
+			p.descripcion= descripcion
+mixin iconofooter(extra_classes)
+	-var default_classes = 'fa fa-stack-1x'
+	if extra_classes
+		-var classes = default_classes + ' ' + extra_classes
+	else
+		-var classes = default_classes
+	span.fa-stack.fa-2x
+		i.fa.fa-circle.fa-stack-1x
+		i(class=classes)
+
+

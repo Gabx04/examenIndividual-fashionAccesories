@@ -1,0 +1,201 @@
+body {
+	font-family: $Raleway;
+}
+.navbar {
+	z-index: 100;
+	width: 100%;
+	background-color: $gray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&.navbar-default {
+		border-color: transparent !important;
+		.navbar-nav {
+				li {
+					
+					font-size: 14px;
+					a {
+						color: gray;
+						&:hover {
+							color: $pink;
+							background-color: none;
+
+							}
+						&:focus {
+							color: $pink;
+							background-color: none;
+
+							}
+					}
+					&.active {
+						a {
+							border-radius: 5px;
+							background-color: white;
+							color: $pink;
+							&:hover {
+								color: $pink;			
+							}
+							&:focus {
+								color: $pink;			
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+		
+	}
+
+	.navbar-toggle {
+		margin-top: 10px;
+    	margin-right: 20px;
+    	background-color: rgba(255, 255, 255, 0.05);
+    	border-color: transparent;
+    	&:hover {
+    		background-color: rgba(255, 255, 255, 0.05);
+    	}
+    	&:focus {
+    		background-color: rgba(255, 255, 255, 0.05);
+    	}
+		.icon-bar {	
+			width: 25px;
+    		height: 3px;
+    		background-color: $pink;
+		}
+	}
+	.navbar-text {
+		margin-left: 15px;
+	}
+
+/*--Header--*/
+header {
+	.presentacion-marca {
+		.opening {
+			display: inline-block;
+			float: left;
+		}
+		.op-i{
+			width: 20px;
+			i {
+				font-size: 24px;
+			}
+		}
+		.titulo-opening {
+			font-weight: 700;
+			font-size: 14px;
+		}
+		.hora {
+			font-size: 11px;
+			display: block;
+		}
+	}
+	.buscador {
+		padding: 5px;
+		border: 1px solid $gray;
+		width: 250px;
+		input {
+			border: 1px solid white;
+			outline: none;
+		}
+	}
+	#nav-header {
+		li {
+			a {
+				color: black;
+			}
+			&:hover {
+				background-color: $pink;
+				a {
+					color: white;
+				}
+				
+			}
+			
+		}
+	}
+	.dropdown {
+		background-color: none;
+	}
+	.cart {
+		background-color: #514949;
+		color: white;
+		font-size: 14px;
+		padding: 7px;
+		text-align: center;
+		i {
+			margin-right: 5px;		
+		}
+		p {
+			font-size: 12px;
+		}
+
+	}
+}
+
+/*-----Portada-----*/
+#portada {
+	background-image: url(../../assets/images/slider1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+	text-align: center;
+	p {
+		color: white
+	}
+	.titulo-coleccion {
+		font-size: 30px;
+		padding: 10px 20px;
+		border: 2px solid white;
+		max-width: 600px;
+		margin: 20px auto;
+	}
+	.coleccion {
+		font-size: 20px;
+	}
+
+}
+/*-----Categorias-----*/
+.accesorios {
+	background-image: url(../../assets/images/banner1.jpg);
+}
+.nueva-coleccion {
+	background-image: url(../../assets/images/banner2.jpg);
+}
+
+/*-----en vitrina-----*/
+#envitrina {
+	.clasificacion-productos {
+		margin: 15px;
+		text-align: center;
+		a {
+			color: $gray;
+			text-decoration: none;
+			margin: 10px 5px;
+			font-size: 16px;
+			font-weight: 700;
+			&:hover {
+				color: black;
+				text-decoration: none;
+			}
+			&:focus {
+				color: black;
+				text-decoration: none;
+			}
+		}
+	}
+	.producto {
+		padding: 5px;
+		text-align: center;
+		background-color: white;
+		.precio-producto {
+			color: $pink;
+		}
+	}
+}
+
+/*----------*/
+/*----------*/
+/*----------*/
+/*----------*/

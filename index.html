@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Fashion Accesories | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,300" rel="stylesheet" type="text/css"/>
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
@@ -20,7 +21,7 @@
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Language<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">English</a></li>
-                <li><a href="#">Spanish</a></li>
+                <li><a href="#">French</a></li>
               </ul>
             </li>
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Currency<span class="caret"></span></a>
@@ -40,16 +41,19 @@
         </div>
       </div>
     </nav>
-    <header>
+    <header id="header">
       <div class="presentacion-marca">
         <div class="container">
           <div class="row">
-            <div class="hidden-xs col-sm-4 opening-hour"><i class="fa fa-clock-o fa-3x"></i>
-              <p class="titulo-opening">OPENING TIME</p>
-              <P class="hora">9:00 AM - 10:00 PM</P>
+            <div class="hidden-xs col-sm-4 opening-hour">
+              <div class="opening op-i"><i class="fa fa-clock-o fa-3x"></i></div>
+              <div class="opening">
+                <p class="titulo-opening">OPENING TIME</p>
+                <p class="hora">9:00 AM - 10:00 PM</p>
+              </div>
             </div>
             <div class="col-xs-6 col-sm-4"><img src="assets/images/logo.png" class="img-responsive"/></div>
-            <div class="col-xs-6 col-sm-4">
+            <div class="col-xs-6 col-sm-4 text-right">
               <div class="buscador">
                 <div class="contenedor">
                   <input type="search" placeholder="search"/><span class="icon"><i class="fa fa-search"></i></span>
@@ -69,7 +73,7 @@
             <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
                 <div class="cart"><i class="fa fa-shopping-cart"></i>My Cart
                   <p>2 item(s) - $244.00</p>
-                </div><span class="caret"></span></a>
+                </div></a>
               <ul class="dropdown-menu dropdown-cart">
                 <li class="compras"><img src="assets/images/cart-1.jpg" alt="sport bag"/>
                   <div class="info-compras">
@@ -92,12 +96,342 @@
         </div>
       </nav>
     </header>
-    <section class="portada">
-      <div class="carrusel">
-        <ol class="in"></ol>
+    <section id="portada">
+      <div class="container">
+        <div class="carrusel">
+          <div class="carrusel-portada">
+            <div class="slide active">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="contenido-carrousel">
+                    <p class="titulo-coleccion">AUTUMM/WINTER LOOKBOOK</p>
+                    <P class="coleccion">- 2016 COLLECTION -</P>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <section id="categorias">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5">
+            <div class="accesorios"></div>
+          </div>
+          <div class="col-xs-7">
+            <div class="nueva-coleccion"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="envitrina">
+      <div class="container">
+        <div class="row fondo-titulo">
+          <div class="clasificacion-productos"><i class="fa fa-angle-left"></i><a href="#">LATEST</a><a href="#">BESTSELLER</a><a href="#">SALE</a><i class="fa fa-angle-right"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="producto">
+              <div class="foto-producto"><img src="assets/images/a1.jpg" alt="producto" class="img-responsive"/>
+                <div class="etiqueta-new">
+                  <p>NEW</p>
+                </div>
+              </div>
+                  <div class="descripcion-producto">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p>
+                  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="producto">
+              <div class="foto-producto"><img src="assets/images/b1.jpg" alt="producto" class="img-responsive"/>
+                <div class="etiqueta-sale">
+                  <p>SALE</p>
+                </div>
+                <div class="etiqueta-new">
+                  <p>NEW</p>
+                </div>
+              </div>
+                  <div class="descripcion-producto">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p>
+                  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="producto">
+              <div class="foto-producto"><img src="assets/images/c1.jpg" alt="producto" class="img-responsive"/>
+                <div class="etiqueta-sale">
+                  <p>SALE</p>
+                </div>
+              </div>
+                  <div class="descripcion-producto">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p>
+                  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="producto">
+              <div class="foto-producto"><img src="assets/images/d1.jpg" alt="producto" class="img-responsive"/>
+                <div class="etiqueta-new">
+                  <p>NEW</p>
+                </div>
+              </div>
+                  <div class="descripcion-producto">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="marcas">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-md-2"><img src="assets/images/client1.jpg" alt="marca" class="img-responsive"/></div>
+          <div class="col-xs-6 col-sm-4 col-md-2"><img src="assets/images/client2.jpg" alt="marca" class="img-responsive"/></div>
+          <div class="col-xs-6 col-sm-4 col-md-2"><img src="assets/images/client3.jpg" alt="marca" class="img-responsive"/></div>
+          <div class="col-xs-6 col-sm-4 col-md-2"><img src="assets/images/client4.jpg" alt="marca" class="img-responsive"/></div>
+          <div class="col-xs-6 col-sm-4 col-md-2"><img src="assets/images/client5.jpg" alt="marca" class="img-responsive"/></div>
+          <div class="col-xs-6 col-sm-4 col-md-2"><img src="assets/images/client6.jpg" alt="marca" class="img-responsive"/></div>
+        </div>
+      </div>
+    </section>
+    <section id="productos">
+      <div class="container">
+        <div class="row fondo-titulo">
+          <div class="clasificacion"><i class="fa fa-angle-left"></i><a href="#">CLOTHING</a><a href="#">EQUIPMENTS</a><a href="#">JEWELLERY</a><i class="fa fa-angle-right"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="nuestros-productos">
+              <div class="foto"><img src="assets/images/a2.jpg" alt="foto producto" class="img-responsive"/>
+                <div class="etiqueta-sale">
+                  <p>SALE</p>
+                </div>
+                <div class="etiqueta-new">
+                  <p>NEW</p>
+                </div>
+              </div>
+                  <div class="descripcion">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p><a class="add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="nuestros-productos">
+              <div class="foto"><img src="assets/images/d2.jpg" alt="foto producto" class="img-responsive"/>
+                <div class="etiqueta-new">
+                  <p>NEW</p>
+                </div>
+              </div>
+                  <div class="descripcion">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p><a class="add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="nuestros-productos">
+              <div class="foto"><img src="assets/images/g2.jpg" alt="foto producto" class="img-responsive"/></div>
+                  <div class="descripcion">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p><a class="add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="nuestros-productos">
+              <div class="foto"><img src="assets/images/c2.jpg" alt="foto producto" class="img-responsive"/>
+                <div class="etiqueta-new">
+                  <p>NEW</p>
+                </div>
+              </div>
+                  <div class="descripcion">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p><a class="add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="nuestros-productos">
+              <div class="foto"><img src="assets/images/c2.jpg" alt="foto producto" class="img-responsive"/>
+                <div class="etiqueta-sale">
+                  <p>SALE</p>
+                </div>
+              </div>
+                  <div class="descripcion">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p><a class="add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="nuestros-productos">
+              <div class="foto"><img src="assets/images/e2.jpg" alt="foto producto" class="img-responsive"/>
+                <div class="etiqueta-new">
+                  <p>NEW</p>
+                </div>
+              </div>
+                  <div class="descripcion">
+                    <p class="nombreproducto">Deliver Wide</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p>
+                    <p class="precio-producto">$218.00</p><a class="add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      <div class="container">
+        <div class="row fondo-titulo">
+          <div class="cabecera-blog"><i class="fa fa-angle-left"></i>
+            <p>BLOG</p><i class="fa fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="post"><img src="assets/images/blog2.jpg" alt="imagen post" class="img-responsive"/>
+                  <p class="titular">THE SAMPLE HEADING TITLE</p>
+                  <p class="fecha-publicacion">27/11/2015</p>
+                  <p class="texto"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ducimus, tempora...</p><a class="expand-post">Read more...</a>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="post"><img src="assets/images/blog1.jpg" alt="imagen post" class="img-responsive"/>
+                  <p class="titular">THE SAMPLE HEADING TITLE</p>
+                  <p class="fecha-publicacion">27/11/2015</p>
+                  <p class="texto"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ducimus, tempora...</p><a class="expand-post">Read more...</a>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="post"><img src="assets/images/blog2.jpg" alt="imagen post" class="img-responsive"/>
+                  <p class="titular">THE SAMPLE HEADING TITLE</p>
+                  <p class="fecha-publicacion">27/11/2015</p>
+                  <p class="texto"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ducimus, tempora...</p><a class="expand-post">Read more...</a>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="post"><img src="assets/images/blog3.jpg" alt="imagen post" class="img-responsive"/>
+                  <p class="titular">THE SAMPLE HEADING TITLE</p>
+                  <p class="fecha-publicacion">27/11/2015</p>
+                  <p class="texto"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ducimus, tempora...</p><a class="expand-post">Read more...</a>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="atencionalcliente">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+                <div class="servicio">
+                  <div><i class="fa fa-phone-square"></i></div>
+                  <div>
+                    <p class="nombre-servicio">ORDER ONLINE NOW</p>
+                    <p class="descripcion">Call Us: (0123) 456 789</p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+                <div class="servicio">
+                  <div><i class="fa fa-plane"></i></div>
+                  <div>
+                    <p class="nombre-servicio">FREE WORLDWIDE SHIPPING</p>
+                    <p class="descripcion">On order Over $100</p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+                <div class="servicio">
+                  <div><i class="fa fa-money"></i></div>
+                  <div>
+                    <p class="nombre-servicio">30 DAYS MONEY BACK 100%</p>
+                    <p class="descripcion">Satisfaction Guarantee</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <p class="titulo-footer">ACCESORIES</p>
+            <p class="texto-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita autem accusantium perspiciatis consequuntur, accusamus, alias odio id itaque distinctio odit fugiat tenetur quae. Temporibus eos unde recusandae tempora enim laboris.</p>
+            <div class="redes"><span class="fondo-icon"><i class="fa fa-facebook"></i></span><span class="fondo-icon"><i class="fa fa-twitter"></i></span><span class="fondo-icon"><i class="fa fa-rss"></i></span><span class="fondo-icon"><i class="fa fa-skype"></i></span><span class="fondo-icon"><i class="fa fa-dribbble"></i></span></div>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <p class="titulo-footer">MY ACCOUNT</p>
+            <ul>
+              <li>My Account</li>
+              <li>Order History</li>
+              <li>Wish List</li>
+              <li>Newsletter</li>
+            </ul>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <p class="titulo-footer">INFORMATION</p>
+            <ul>
+              <li>About Us</li>
+              <li>Delivery Information</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="col-xs-3 col-md-2">
+            <p class="titulo-footer">EXTRAS</p>
+            <ul>
+              <li>Brands</li>
+              <li>Gift Vouchers</li>
+              <li>Affiliates</li>
+              <li>Specials</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <p class="titulo-footer">ABOUT US
+              <ul>
+                <li><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-stack-1x map-maker"></i></span><a>8901 Marmora Road, Glasgow DO489 GR, New York</a>
+                </li>
+                <li><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-stack-1x phone"></i></span><a>(0123)456789</a><br/><a>(0987)654321</a>
+                </li>
+                <li><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-stack-1x envelope"></i></span><a>admin@bootexperts.com</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="pull-left">
+            <p>Copyright © 2015<a href="#">BootExpert.</a>All right reserved.</p>
+          </div>
+          <div class="pull-right"><img src="assets/images/payment.png" alt="medios de pago"/></div>
+        </div>
+      </div>
+    </footer>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

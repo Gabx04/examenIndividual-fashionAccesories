@@ -1,3 +1,215 @@
 <!DOCTYPE html>
 html(lang="en")
 	head
+		meta(charset="UTF-8")
+		meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+		title Fashion Accesories | Contact
+		link(href="https://fonts.googleapis.com/css?family=Raleway:400,700,300", rel="stylesheet", type="text/css")
+		link(href="assets/font-awesome/css/font-awesome.min.css", rel="stylesheet")
+		link(href="assets/css/bootstrap.css", rel="stylesheet")
+		link(href="assets/css/main.css", rel="stylesheet")
+	body
+		include ./_variables
+		include ./_mixins
+		nav#nav-secundario.navbar.navbar-default
+				.container
+					.navbar-header.page-scroll
+						button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-collapse-1")
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						p.navbar-text Default Welcome Msg!
+					#navbar-collapse-1.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li.dropdown
+								a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle Language
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") English
+									li
+										a(href="#") Spanish
+										
+							li.dropdown
+								a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle Currency
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") Dollars
+									li
+										a(href="#") Euro
+							li.dropdown
+								a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle My Account
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") Profile
+									li
+										a(href="#") Settings
+									li
+										a(href="#") Log Out
+		header#header
+			.presentacion-marca
+				.container
+					.row
+						.hidden-xs.col-sm-4.opening-hour
+							.opening.op-i
+								i.fa.fa-clock-o.fa-3x
+							.opening
+								p.titulo-opening OPENING TIME
+								p.hora 9:00 AM - 10:00 PM
+						.col-xs-6.col-sm-4
+							img(src="assets/images/logo.png").img-responsive
+						.col-xs-6.col-sm-4.text-right
+							.buscador
+								.contenedor
+									input(type="search", placeholder="search")
+									span.icon
+										i.fa.fa-search
+			nav#nav-header.navbar.navbar-default
+				.container
+					ul.nav.navbar-nav.navbar-left
+						li
+							a(href="#") Home
+						li
+							a(href="#") Contact Us
+					ul.nav.navbar-nav.navbar-right
+						li.dropdown
+							a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle
+								.cart
+									i.fa.fa-shopping-cart
+									|My Cart
+									p 2 item(s) - $244.00
+								
+							ul.dropdown-menu.dropdown-cart
+									li.compras
+										img(src="assets/images/cart-1.jpg", alt="sport bag")
+										.info-compras
+											p Aliquan Consequat
+											p
+												|1 x
+												span.precio-producto $500
+												a(href="")
+													i.fa.fa-times
+
+									li.compras
+										img(src="assets/images/cart-2.jpg", alt="fancy hat")
+										.info-compras
+											p Quisque In Arcuc
+											p
+												|1 x
+												span.precio-producto $200
+												a(href="")
+													i.fa.fa-times
+									li.info-compras
+										span.detalle Sub-Total
+										span.detalle-consumo $700
+									li.info-compras
+										span.detalle Eco Tax (-2.00)
+										span.detalle-consumo $7.00
+									li.info-compras
+										span.detalle VAT (20%)
+										span.detalle-consumo  $40.00
+
+		section#infocontact
+			.container
+				.row
+					.col-xs-12.col-md-6.titulo-contacto
+					.col-xs-12.col-md-6
+						.contacto
+							p.info Contact Info
+							p phone:0(1234)56789
+							p
+								|Mail:
+								a(href="#") :Infor@roadthemes.com
+							p 
+								|Addres:
+								a(href="#") :No40 Baria Street 133/2 New York City, NY, United States.
+		
+		section#formulariocontacto
+			.container
+				.row
+					.col-xs-12.col-md-6
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.308254802874!2d-74.334449185028!3d40.68920824694734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ae1edf938973%3A0x71d36a7db4509dcf!2s783+Mountain+Ave%2C+Springfield+Township%2C+NJ+07081%2C+EE.+UU.!5e0!3m2!1ses-419!2spe!4v1459366785907", frameborder="0", width="100%" height="450", style="border:0" allowfullscreen)
+					.col-xs-12.col-md-6
+						.formulario
+							form(action="")#usrform
+								input(type="text", name="name", value="", placeholder="First name").col
+								input(type="text", name="lastname", value="", placeholder="").col
+								input(type="text", name="email", value="", placeholder="Email").col
+								input(type="text", name="website", value="", placeholder="Website").col
+								input(type="text", name="subject", value="", placeholder="Subject")
+
+								textarea(name="mesagge", cols="30", rows="10", placeholder="Mesagge", form="usrform")
+								input(type="submit", value="SEND").send.text-right
+								
+
+
+		section#section-footer
+			.container
+				.row
+					.col-xs-12.col-md-3
+						p.titulo-footer ACCESORIES
+						p.texto-footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita autem accusantium perspiciatis consequuntur, accusamus, alias odio id itaque distinctio odit fugiat tenetur quae. Temporibus eos unde recusandae tempora enim laboris.
+						.redes
+							span.fondo-icon
+								i.fa.fa-facebook
+							span.fondo-icon
+								i.fa.fa-twitter
+							span.fondo-icon
+								i.fa.fa-rss
+							span.fondo-icon
+								i.fa.fa-skype
+							span.fondo-icon
+								i.fa.fa-dribbble
+					.col-xs-3.col-md-2
+						p.titulo-footer MY ACCOUNT
+						ul
+							li My Account
+							li Order History
+							li Wish List
+							li Newsletter
+					.col-xs-3.col-md-2
+						p.titulo-footer INFORMATION
+						ul
+							li About Us
+							li Delivery Information
+							li Privacy Policy
+							li Terms & Conditions
+					.col-xs-3.col-md-2
+						p.titulo-footer EXTRAS
+						ul
+							li Brands
+							li Gift Vouchers
+							li Affiliates
+							li Specials
+					.col-xs-12.col-md-3
+						p.titulo-footer ABOUT US
+							ul
+								li
+									+iconofooter("map-maker")
+									a 8901 Marmora Road, Glasgow DO489 GR, New York
+								li
+									+iconofooter("phone")
+									a (0123)456789
+									br
+									a (0987)654321
+								li
+									+iconofooter("envelope")
+									a admin@bootexperts.com
+								
+		footer
+			.container
+				.row
+					.pull-left
+						p
+							|Copyright © 2015
+							a(href="#") BootExpert.
+							| All right reserved.
+					.pull-right
+						img(src="assets/images/payment.png", alt="medios de pago")
+
+		script(src="assets/js/jquery.js")
+		script(src="assets/js/bootstrap.min.js")
+		script(src="assets/js/main.js")

@@ -4,6 +4,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta( name='viewport', content='width=device-width, initial-scale=1.0' )
 		title Fashion Accesories | Home
+		link(href="https://fonts.googleapis.com/css?family=Raleway:400,700,300", rel="stylesheet", type="text/css")
 		link(href="assets/font-awesome/css/font-awesome.min.css", rel="stylesheet")
 		link(href="assets/css/bootstrap.css", rel="stylesheet")
 		link(href="assets/css/main.css", rel="stylesheet")
@@ -28,7 +29,7 @@ html(lang="en")
 									li
 										a(href="#") English
 									li
-										a(href="#") Spanish
+										a(href="#") French
 										
 							li.dropdown
 								a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle Currency
@@ -48,17 +49,19 @@ html(lang="en")
 										a(href="#") Settings
 									li
 										a(href="#") Log Out
-		header
+		header#header
 			.presentacion-marca
 				.container
 					.row
 						.hidden-xs.col-sm-4.opening-hour
-							i.fa.fa-clock-o.fa-3x
-							p.titulo-opening OPENING TIME
-							P.hora 9:00 AM - 10:00 PM
+							.opening.op-i
+								i.fa.fa-clock-o.fa-3x
+							.opening
+								p.titulo-opening OPENING TIME
+								p.hora 9:00 AM - 10:00 PM
 						.col-xs-6.col-sm-4
 							img(src="assets/images/logo.png").img-responsive
-						.col-xs-6.col-sm-4
+						.col-xs-6.col-sm-4.text-right
 							.buscador
 								.contenedor
 									input(type="search", placeholder="search")
@@ -78,7 +81,7 @@ html(lang="en")
 									i.fa.fa-shopping-cart
 									|My Cart
 									p 2 item(s) - $244.00
-								span.caret
+								
 							ul.dropdown-menu.dropdown-cart
 									li.compras
 										img(src="assets/images/cart-1.jpg", alt="sport bag")
@@ -108,18 +111,228 @@ html(lang="en")
 									li.info-compras
 										span.detalle VAT (20%)
 										span.detalle-consumo  $40.00
-		section.portada
-			.carrusel
-				ol.in
+		section#portada
+			.container
+				.carrusel
+					.carrusel-portada
+						.slide.active
+							.row
+								.col-xs-12
+									.contenido-carrousel
+										p.titulo-coleccion AUTUMM/WINTER LOOKBOOK
+										P.coleccion
+											|- 2016 COLLECTION -
+		section#categorias
+			.container
+				.row
+					.col-xs-5
+						.accesorios
+					.col-xs-7
+						.nueva-coleccion
 
+		section#envitrina
+			.container
+				.row.fondo-titulo
+					.clasificacion-productos
+						i.fa.fa-angle-left
+						a(href="#") LATEST
+						a(href="#") BESTSELLER
+						a(href="#") SALE
+						i.fa.fa-angle-right
+				.row
+					.col-xs-12.col-sm-6.col-md-3
+						.producto
+							.foto-producto
+								img(src="assets/images/a1.jpg", alt="producto").img-responsive
+								.etiqueta-new
+									p NEW
+							+descripcionproductoespecial
+					.col-xs-12.col-sm-6.col-md-3
+						.producto
+							.foto-producto
+								img(src="assets/images/b1.jpg", alt="producto").img-responsive
+								.etiqueta-sale
+									p SALE
+								.etiqueta-new
+									p NEW
+							+descripcionproductoespecial
+					.col-xs-12.col-sm-6.col-md-3
+						.producto
+							.foto-producto
+								img(src="assets/images/c1.jpg", alt="producto").img-responsive
+								.etiqueta-sale
+									p SALE
+							+descripcionproductoespecial
+					.col-xs-12.col-sm-6.col-md-3
+						.producto
+							.foto-producto
+								img(src="assets/images/d1.jpg", alt="producto").img-responsive
+								.etiqueta-new
+									p NEW
+							+descripcionproductoespecial
 
+		section#marcas
+			.container
+				.row
+					.col-xs-6.col-sm-4.col-md-2
+						img(src="assets/images/client1.jpg", alt="marca").img-responsive
+					.col-xs-6.col-sm-4.col-md-2
+						img(src="assets/images/client2.jpg", alt="marca").img-responsive
+					.col-xs-6.col-sm-4.col-md-2
+						img(src="assets/images/client3.jpg", alt="marca").img-responsive
+					.col-xs-6.col-sm-4.col-md-2
+						img(src="assets/images/client4.jpg", alt="marca").img-responsive
+					.col-xs-6.col-sm-4.col-md-2
+						img(src="assets/images/client5.jpg", alt="marca").img-responsive
+					.col-xs-6.col-sm-4.col-md-2
+						img(src="assets/images/client6.jpg", alt="marca").img-responsive
+		
+		section#productos
+			.container
+				.row.fondo-titulo
+					.clasificacion
+						i.fa.fa-angle-left
+						a(href="#") CLOTHING
+						a(href="#") EQUIPMENTS
+						a(href="#") JEWELLERY
+						i.fa.fa-angle-right
+				.row
+					.col-xs-12.col-sm-6.col-md-4
+						.nuestros-productos
+							.foto
+								img(src="assets/images/a2.jpg", alt="foto producto").img-responsive
+								.etiqueta-sale
+									p SALE
+								.etiqueta-new
+									p NEW
+							+producto
+					.col-xs-12.col-sm-6.col-md-4
+						.nuestros-productos
+							.foto
+								img(src="assets/images/d2.jpg", alt="foto producto").img-responsive
+								.etiqueta-new
+									p NEW
+							+producto
+					.col-xs-12.col-sm-6.col-md-4
+						.nuestros-productos
+							.foto
+								img(src="assets/images/g2.jpg", alt="foto producto").img-responsive
 
+							+producto
+					.col-xs-12.col-sm-6.col-md-4
+						.nuestros-productos
+							.foto
+								img(src="assets/images/c2.jpg", alt="foto producto").img-responsive
+								.etiqueta-new
+									p NEW
+							+producto
+					.col-xs-12.col-sm-6.col-md-4
+						.nuestros-productos
+							.foto
+								img(src="assets/images/c2.jpg", alt="foto producto").img-responsive
+								.etiqueta-sale
+									p SALE
+							+producto
+					.col-xs-12.col-sm-6.col-md-4
+						.nuestros-productos
+							.foto
+								img(src="assets/images/e2.jpg", alt="foto producto").img-responsive
+								.etiqueta-new
+									p NEW
+							+producto
+		
+		section#blog
+			.container
+				.row.fondo-titulo
+					.cabecera-blog
+						i.fa.fa-angle-left
+						p BLOG
+						i.fa.fa-angle-right
+				.row
+					.col-xs-12.col-sm-6.col-md-3
+						+post("assets/images/blog2.jpg")
+					.col-xs-12.col-sm-6.col-md-3
+						+post("assets/images/blog1.jpg")
+					.col-xs-12.col-sm-6.col-md-3
+						+post("assets/images/blog2.jpg")
+					.col-xs-12.col-sm-6.col-md-3
+						+post("assets/images/blog3.jpg")
+		section#atencionalcliente
+			.container
+				.row
+					.col-xs-12.col-md-4
+						+atencioncliente("fa fa-phone-square", "ORDER ONLINE NOW", "Call Us: (0123) 456 789")
+					.col-xs-12.col-md-4
+						+atencioncliente("fa fa-plane", "FREE WORLDWIDE SHIPPING", "On order Over $100")
+					.col-xs-12.col-md-4
+						+atencioncliente("fa fa-money", "30 DAYS MONEY BACK 100%", "Satisfaction Guarantee")
 
-
-
-
+		section#section-footer
+			.container
+				.row
+					.col-xs-12.col-md-3
+						p.titulo-footer ACCESORIES
+						p.texto-footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita autem accusantium perspiciatis consequuntur, accusamus, alias odio id itaque distinctio odit fugiat tenetur quae. Temporibus eos unde recusandae tempora enim laboris.
+						.redes
+							span.fondo-icon
+								i.fa.fa-facebook
+							span.fondo-icon
+								i.fa.fa-twitter
+							span.fondo-icon
+								i.fa.fa-rss
+							span.fondo-icon
+								i.fa.fa-skype
+							span.fondo-icon
+								i.fa.fa-dribbble
+					.col-xs-3.col-md-2
+						p.titulo-footer MY ACCOUNT
+						ul
+							li My Account
+							li Order History
+							li Wish List
+							li Newsletter
+					.col-xs-3.col-md-2
+						p.titulo-footer INFORMATION
+						ul
+							li About Us
+							li Delivery Information
+							li Privacy Policy
+							li Terms & Conditions
+					.col-xs-3.col-md-2
+						p.titulo-footer EXTRAS
+						ul
+							li Brands
+							li Gift Vouchers
+							li Affiliates
+							li Specials
+					.col-xs-12.col-md-3
+						p.titulo-footer ABOUT US
+							ul
+								li
+									+iconofooter("map-maker")
+									a 8901 Marmora Road, Glasgow DO489 GR, New York
+								li
+									+iconofooter("phone")
+									a (0123)456789
+									br
+									a (0987)654321
+								li
+									+iconofooter("envelope")
+									a admin@bootexperts.com
+								
+		footer
+			.container
+				.row
+					.pull-left
+						p
+							|Copyright © 2015
+							a(href="#") BootExpert.
+							| All right reserved.
+					.pull-right
+						img(src="assets/images/payment.png", alt="medios de pago")
 
 		script(src="assets/js/jquery.js")
 		script(src="assets/js/bootstrap.min.js")
+		script(src="assets/js/main.js")
 
 							
