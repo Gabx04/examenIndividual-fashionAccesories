@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+		title Fashion Accesories | Home
+		link(href="assets/font-awesome/css/font-awesome.min.css", rel="stylesheet")
+		link(href="assets/css/bootstrap.css", rel="stylesheet")
+		link(href="assets/css/main.css", rel="stylesheet")
+	body
+		include ./_variables
+		include ./_mixins
+		nav#nav-secundario.navbar.navbar-default
+				.container
+					.navbar-header.page-scroll
+						button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-collapse-1")
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						p.navbar-text Default Welcome Msg!
+					#navbar-collapse-1.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li.dropdown
+								a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle Language
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") English
+									li
+										a(href="#") Spanish
+										
+							li.dropdown
+								a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle Currency
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") Dollars
+									li
+										a(href="#") Euro
+							li.dropdown
+								a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle My Account
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") Profile
+									li
+										a(href="#") Settings
+									li
+										a(href="#") Log Out
+		header
+			.presentacion-marca
+				.container
+					.row
+						.hidden-xs.col-sm-4.opening-hour
+							i.fa.fa-clock-o.fa-3x
+							p.titulo-opening OPENING TIME
+							P.hora 9:00 AM - 10:00 PM
+						.col-xs-6.col-sm-4
+							img(src="assets/images/logo.png").img-responsive
+						.col-xs-6.col-sm-4
+							.buscador
+								.contenedor
+									input(type="search", placeholder="search")
+									span.icon
+										i.fa.fa-search
+			nav#nav-header.navbar.navbar-default
+				.container
+					ul.nav.navbar-nav.navbar-left
+						li
+							a(href="#") Home
+						li
+							a(href="#") Contact Us
+					ul.nav.navbar-nav.navbar-right
+						li.dropdown
+							a(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false").dropdown-toggle
+								.cart
+									i.fa.fa-shopping-cart
+									|My Cart
+									p 2 item(s) - $244.00
+								span.caret
+							ul.dropdown-menu.dropdown-cart
+									li.compras
+										img(src="assets/images/cart-1.jpg", alt="sport bag")
+										.info-compras
+											p Aliquan Consequat
+											p
+												|1 x
+												span.precio-producto $500
+												a(href="")
+													i.fa.fa-times
+
+									li.compras
+										img(src="assets/images/cart-2.jpg", alt="fancy hat")
+										.info-compras
+											p Quisque In Arcuc
+											p
+												|1 x
+												span.precio-producto $200
+												a(href="")
+													i.fa.fa-times
+									li.info-compras
+										span.detalle Sub-Total
+										span.detalle-consumo $700
+									li.info-compras
+										span.detalle Eco Tax (-2.00)
+										span.detalle-consumo $7.00
+									li.info-compras
+										span.detalle VAT (20%)
+										span.detalle-consumo  $40.00
+		section.portada
+			.carrusel
+				ol.in
+
+
+
+
+
+
+
+
+		script(src="assets/js/jquery.js")
+		script(src="assets/js/bootstrap.min.js")
+
+							
